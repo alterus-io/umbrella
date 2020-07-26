@@ -4,7 +4,7 @@ metadata:
   name: namespaces
   namespace: argocd
 spec:
-  project: umbrella
+  project: default
   source:
     repoURL: https://github.com/alterus-io/umbrella.git
     targetRevision: master
