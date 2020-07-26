@@ -11,7 +11,7 @@ spec:
     path: deploy/charts/cert-manager
     helm:
       values: |
-        installCrds: true
+        installCRDs: true
 
         cainjector:
           image:
