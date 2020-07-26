@@ -1,2 +1,5 @@
 commonAnnotations:
   argocd.argoproj.io/sync-wave: "-3"
+
+bases:
+  - cert-manager.yaml
