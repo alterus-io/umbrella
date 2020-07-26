@@ -11,7 +11,7 @@ spec:
     path: deploy/charts/cert-manager
     helm:
       values: |
-        installCRDs: true
+        installCRDs: "true"
         cainjector:
           image:
             tag: "v0.15.0"
