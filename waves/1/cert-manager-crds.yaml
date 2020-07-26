@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/jetstack/cert-manager.git
-    targetRevision: v0.16.0
-    path: deploy/crds
+    repoURL: https://github.com/alterus-io/umbrella.git
+    targetRevision: master
+    path: cert-manager-crds
   destination:
     server: https://kubernetes.default.svc
-    namespace: cert-manager
+    namespace: argocd
   syncPolicy:
     automated:
       prune: true
