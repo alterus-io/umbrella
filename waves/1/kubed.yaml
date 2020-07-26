@@ -7,8 +7,8 @@ spec:
   project: default
   source:
     repoURL: https://github.com/appscode/kubed.git
-    targetRevision: v0.11.0
-    path: chart/kubed
+    targetRevision: v0.12.0
+    path: charts/kubed
   destination:
     server: https://kubernetes.default.svc
     namespace: kube-system
