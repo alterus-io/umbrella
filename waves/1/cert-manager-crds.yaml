@@ -1,27 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cert-manager
+  name: cert-manager-crds
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/jetstack/cert-manager.git
     targetRevision: v0.16.0
-    path: deploy/charts/cert-manager
-    helm:
-      values: |-
-        cainjector:
-          image:
-            tag: "v0.16.0"
-        webhook:
-          image:
-            tag: "v0.16.0"
-        image:
-          tag: "v0.16.0"
-        podDnsConfig:
-          nameservers:
-            - "1.1.1.1"
+    path: deploy/crds
   destination:
     server: https://kubernetes.default.svc
     namespace: cert-manager
