@@ -1,3 +1,4 @@
 namespaces:
   - cert-manager
   - gitlab
+  - longhorn

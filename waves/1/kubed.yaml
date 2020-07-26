@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: longhorn
+  name: kubed
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/longhorn/charts.git
-    targetRevision: longhorn-1.0.1
-    path: charts/longhorn
+    repoURL: https://github.com/appscode/kubed.git
+    targetRevision: v0.11.0
+    path: charts/kubed
   destination:
     server: https://kubernetes.default.svc
-    namespace: longhorn
+    namespace: kube-system
   syncPolicy:
     automated:
       prune: true
