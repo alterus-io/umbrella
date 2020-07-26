@@ -1,0 +1,2 @@
+commonAnnotations:
+  argocd.argoproj.io/sync-wave: "-2"

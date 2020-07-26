@@ -1,0 +1,5 @@
+commonAnnotations:
+  argocd.argoproj.io/sync-wave: "-5"
+
+bases:
+  - namespaces.yaml
