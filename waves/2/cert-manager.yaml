@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/jetstack/cert-manager.git
-    targetRevision: v0.16.0
+    targetRevision: v0.15.0
     path: deploy/charts/cert-manager
     helm:
       values: |
