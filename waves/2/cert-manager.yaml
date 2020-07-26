@@ -11,15 +11,6 @@ spec:
     path: deploy/charts/cert-manager
     helm:
       values: |
-        installCRDs: "true"
-        cainjector:
-          image:
-            tag: "v0.15.0"
-        webhook:
-          image:
-            tag: "v0.15.0"
-        image:
-          tag: "v0.15.0"
         podDnsConfig:
           nameservers:
             - "1.1.1.1"
