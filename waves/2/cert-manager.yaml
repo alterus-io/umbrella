@@ -15,14 +15,14 @@ spec:
 
         cainjector:
           image:
-            tag: v0.15.0
+            tag: "v0.15.0"
 
         webhook:
           image:
-            tag: v0.15.0
+            tag: "v0.15.0"
 
         image:
-          tag: v0.15.0
+          tag: "v0.15.0"
 
         podDnsConfig:
           nameservers:
