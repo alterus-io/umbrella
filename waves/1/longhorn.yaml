@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/longhorn/charts.git
-    targetRevision: tags/longhorn-1.0.1
+    targetRevision: longhorn-1.0.1
     path: charts/longhorn
   destination:
     server: https://kubernetes.default.svc
