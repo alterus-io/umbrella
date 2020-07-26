@@ -1,0 +1,5 @@
+namespaces:
+  - cert-manager
+  - gitlab
+
+labels:

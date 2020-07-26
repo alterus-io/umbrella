@@ -1,10 +1,14 @@
-apiVersion: v1
-kind: Namespace
+apiVersion: argoproj.io/v1alpha1
+kind: Application
 metadata:
-  name: cert-manager
----
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: gitlab
-
+  name: namespaces
+  namespace: argocd
+spec:
+  project: umbrella
+  source:
+    repoURL: https://github.com/alterus-io/umbrella.git
+    targetRevision: master
+    path: namespaces
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
