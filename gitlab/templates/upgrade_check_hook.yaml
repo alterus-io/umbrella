@@ -12,7 +12,9 @@ metadata:
     "helm.sh/hook-delete-policy": before-hook-creation
 data:
   runcheck: |
-    {{- include (print $.Template.BasePath "/_runcheck.tpl") . | nindent 4 }}
+    #!/bin/bash
+
+    echo "We don't need a check"
 ---
 apiVersion: batch/v1
 kind: Job
