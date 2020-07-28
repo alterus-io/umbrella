@@ -17,6 +17,9 @@ spec:
           hosts:
             domain: atoy.lol
 
+          serviceAccount:
+            enabled: true
+
         certmanager-issuer:
           email: atoy3731@gmail.com
   destination:
