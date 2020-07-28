@@ -3,3 +3,4 @@ commonAnnotations:
 
 bases:
   - jenkins.yaml
+  - gitlab.yaml

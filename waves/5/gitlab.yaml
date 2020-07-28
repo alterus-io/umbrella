@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://gitlab.com/gitlab-org/charts/gitlab.git
+    repoURL: https://github.com/alterus-io/umbrella.git
     targetRevision: master
-    path: .
+    path: gitlab
     helm:
       values: |-
         global:
