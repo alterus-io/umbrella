@@ -12,6 +12,7 @@ spec:
     helm:
       values: |-
         global:
+          edition: ce
 
           hosts:
             domain: atoy.lol
