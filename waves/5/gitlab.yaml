@@ -12,19 +12,8 @@ spec:
     helm:
       values: |-
         global:
-          ingress:
-            class: nginx
-            https: false
-            configureCertmanager: false
-
           hosts:
             domain: atoy.lol
-
-        nginx-ingress:
-          enabled: false
-          rbac:
-            create: true
-            createClusterRole: true
 
   destination:
     server: https://kubernetes.default.svc
