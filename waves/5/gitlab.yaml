@@ -14,6 +14,8 @@ spec:
         global:
           ingress:
             class: nginx
+            https: false
+            configureCertmanager: false
 
           hosts:
             domain: atoy.lol
