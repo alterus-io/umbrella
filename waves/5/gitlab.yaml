@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://gitlab.com/gitlab-org/charts/gitlab.git
-    targetRevision: 13.3.202007272240+a68fde56984
+    targetRevision: master
     path: .
     helm:
       values: |-
