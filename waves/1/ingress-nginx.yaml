@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/helm/charts.git
     targetRevision: master
-    path: charts/stable/nginx-ingress
+    path: stable/nginx-ingress
     helm:
       values: |-
         tcp:
