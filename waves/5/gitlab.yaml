@@ -22,6 +22,10 @@ spec:
 
         nginx-ingress:
           enabled: false
+          rbac:
+            create: true
+            createClusterRole: true
+
   destination:
     server: https://kubernetes.default.svc
     namespace: gitlab
