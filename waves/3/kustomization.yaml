@@ -1,5 +1,5 @@
 commonAnnotations:
   argocd.argoproj.io/sync-wave: "-2"
 
-bases:
-  - cert-manager-secret-webhook.yaml
+#bases:
+#  - cert-manager-secret-webhook.yaml
