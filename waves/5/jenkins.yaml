@@ -16,6 +16,8 @@ spec:
             enabled: true
             hostName: jenkins.atoy.lol
 
+        persistence:
+          enabled: false
   destination:
     server: https://kubernetes.default.svc
     namespace: jenkins
