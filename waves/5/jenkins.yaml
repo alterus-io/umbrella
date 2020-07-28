@@ -9,6 +9,13 @@ spec:
     repoURL: https://github.com/helm/charts.git
     targetRevision: master
     path: stable/jenkins
+    helm:
+      values: |-
+        master:
+          ingress:
+            enabled: true
+            hostName: jenkins.atoy.lol
+
   destination:
     server: https://kubernetes.default.svc
     namespace: jenkins
