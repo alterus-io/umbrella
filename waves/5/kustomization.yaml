@@ -2,4 +2,4 @@ commonAnnotations:
   argocd.argoproj.io/sync-wave: "0"
 
 bases:
-  - gitlab.yaml
+  - jenkins.yaml
