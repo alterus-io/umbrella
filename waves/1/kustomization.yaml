@@ -4,4 +4,4 @@ commonAnnotations:
 bases:
   - longhorn.yaml
   - kubed.yaml
-#  - cert-manager-crds.yaml
+  - ingress-nginx.yaml

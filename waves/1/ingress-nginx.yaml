@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ingress-nginx
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/helm/charts.git
+    targetRevision: master
+    path: charts/stable/nginx-ingress
+    helm:
+      values: |-
+        tcp:
+          22: "gitlab/mygitlab-gitlab-shell:22"
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: ingress-nginx
+  syncPolicy:
+    automated:
+      prune: true
