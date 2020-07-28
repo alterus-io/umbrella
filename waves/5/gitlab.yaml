@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ingress-nginx
+  name: gitlab
   namespace: argocd
 spec:
   project: default
@@ -22,7 +22,7 @@ spec:
           enabled: false
   destination:
     server: https://kubernetes.default.svc
-    namespace: ingress-nginx
+    namespace: gitlab
   syncPolicy:
     automated:
       prune: true
