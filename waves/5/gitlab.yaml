@@ -16,7 +16,8 @@ spec:
           hosts:
             domain: atoy.lol
 
-
+        certmanager-issuer:
+          email: atoy3731@gmail.com
   destination:
     server: https://kubernetes.default.svc
     namespace: gitlab
